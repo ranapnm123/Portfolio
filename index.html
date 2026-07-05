@@ -125,6 +125,20 @@
   .hero h1 em {
     font-style: italic; color: var(--blue);
   }
+  .hero-name {
+    font-family: 'DM Mono', monospace;
+    font-size: clamp(0.9rem, 1.6vw, 1.05rem);
+    letter-spacing: 0.25em;
+    color: var(--text);
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+    animation: fadeUp 0.7s 0.15s ease both;
+    display: inline-flex; align-items: center; gap: 12px;
+  }
+  .hero-name::before, .hero-name::after {
+    content: ''; width: 28px; height: 1px;
+    background: var(--blue-mid);
+  }
   .hero-sub {
     font-size: clamp(1rem, 2vw, 1.2rem);
     color: var(--muted); max-width: 560px;
@@ -416,7 +430,7 @@
 
 <!-- NAV -->
 <nav>
-  <div class="nav-logo">iOS.DEV</div>
+  <div class="nav-logo">RAVINDRA SINGH</div>
   <div class="nav-links">
     <a href="#apps">Work</a>
     <a href="#stack">Stack</a>
@@ -430,6 +444,7 @@
 <section class="hero">
   <div class="hero-badge">AVAILABLE FOR FREELANCE</div>
   <h1>Senior <em>iOS</em><br>Developer</h1>
+  <p class="hero-name">Ravindra Singh</p>
   <p class="hero-sub">14 years building production-grade iOS apps — from architecture to App Store submission. I own your project end-to-end.</p>
   <div class="hero-actions">
     <a href="#apps" class="btn-primary">View My Work</a>
@@ -687,7 +702,7 @@
 
 <!-- FOOTER -->
 <footer>
-  <div class="footer-logo">SENIOR iOS DEVELOPER · DEHRADUN, INDIA</div>
+  <div class="footer-logo">RAVINDRA SINGH · SENIOR iOS DEVELOPER · DEHRADUN, INDIA</div>
   <div class="footer-right">Swift · SwiftUI · 14 Years</div>
 </footer>
 
